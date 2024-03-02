@@ -1,9 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Daily Forum</title>
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- BoxIcon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+      .mulish {
+        font-family: "Mulish", sans-serif;
+      }
+      .text-1 {
+        color: rgb(18, 19, 45);
+      }
+      .text-2 {
+        color: rgba(18, 19, 45, 0.6);
+      }
+      .bg-1 {
+        background: rgb(121, 125, 252);
+      }
+      .bg-2 {
+        background: rgb(16, 185, 129);
+      }
+      .bg-3 {
+        background: rgb(255, 52, 52);
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="mulish">
+    <header>
+      <div class="container mx-auto">
+        <!-- Nav -->
+        <nav class="flex justify-between items-center pt-10 pb-12">
+          <div class="nav-left text-4xl font-extrabold">Fast</div>
+          <div class="nav-right flex items-center gap-5">
+            <div class="nav-icons flex items-center gap-2">
+              <div class="tooltip" data-tip="Home">
+                <div
+                  class="h-14 w-14 rounded-full text-2xl bg-slate-200 flex justify-center items-center"
+                >
+                  <i class="bx bx-home-alt-2"></i>
+                </div>
+              </div>
+              <div class="tooltip" data-tip="Notes">
+                <div
+                  class="h-14 w-14 rounded-full text-2xl bg-slate-200 flex justify-center items-center"
+                >
+                  <i class="bx bx-pencil"></i>
+                </div>
+              </div>
+              <div class="tooltip" data-tip="Chat">
+                <div
+                  class="h-14 w-14 rounded-full text-2xl bg-slate-200 flex justify-center items-center"
+                >
+                  <i class="bx bx-chat"></i>
+                </div>
+              </div>
+              <div class="tooltip" data-tip="Community">
+                <div
+                  class="h-14 w-14 rounded-full text-2xl bg-slate-200 flex justify-center items-center"
+                >
+                  <i class="bx bx-flag"></i>
+                </div>
+              </div>
+            </div>
+            <div class="nav-button">
+              <button
+                class="btn bg-1 text-white rounded-[50px] w-28 h-14 font-bold text-xl"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- Hero -->
+        <div
+          class="hero-container h-[550px] bg-[#12132d] bg-[url('/images/bgbanner.png')] bg-no-repeat bg-bottom bg-contain rounded-[32px] p-24 flex justify-between items-center"
+        >
+          <div class="hero-left">
+            <h2 class="text-white w-[633px] text-[64px] font-extrabold">
+              Welcome to the <span class="text-blue-700">Fast</span> Forum
+            </h2>
+            <p class="text-xl text-slate-200 w-[455px] mt-5 mb-8">
+              Share your favorite opinion and win and wp forum coffee mug!
+            </p>
+            <label class="input flex w-[320px] rounded-[46px]">
+              <input type="text" class="" placeholder="Search here anything" />
+              <button class="py-2 bg-1 px-6 rounded-[46px] my-auto text-white">
+                Search
+              </button>
+            </label>
+          </div>
+          <div class="hero-right bg-white p-12 rounded-[32px] w-[380px]">
+            <div
+              class="font-medium text-2xl text-slate-600 flex flex-col gap-8"
+            >
+              <div class="flex justify-between">
+                <div>Registers User</div>
+                <div>03</div>
+              </div>
+              <div class="flex justify-between">
+                <div>Forum</div>
+                <div>01</div>
+              </div>
+              <div class="flex justify-between">
+                <div>Topics</div>
+                <div>01</div>
+              </div>
+              <div class="flex justify-between">
+                <div>Replies</div>
+                <div>01</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Discuss Section Start -->
+      <section class="discuss-section">
+        <div class="container mx-auto">
+          <div class="discuss-title text-center mb-12 mt-24">
+            <h2 class="font-extrabold text-5xl">Let's Discuss</h2>
+            <p class="w-[691px] mx-auto mt-6 text-lg text-slate-500">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+          </div>
+          <div class="discuss-main"></div>
+        </div>
+      </section>
+      <!-- Discuss Section End -->
+    </main>
+    <footer>
+      <div class="tooltip" data-tip="hello"></div>
+    </footer>
+
+    <!-- JavaScript link -->
+    <script src="script/forum.js"></script>
+  </body>
 </html>
