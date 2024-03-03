@@ -153,98 +153,12 @@
             </p>
           </div>
           <div class="discuss-main flex gap-6">
-            <div class="discuss-left flex flex-col gap-6">
-              <div
-                class="discuss-card w-[780px] bg-slate-100 p-10 rounded-[24px] flex"
-              >
-                <div class="card-image mr-6 relative">
-                  <img src="images/logo.png" alt="" />
-                  <div
-                    class="h-3 w-3 rounded-full bg-2 absolute -top-2 -right-2"
-                  ></div>
-                </div>
-                <div class="card-content">
-                  <div class="flex inter font-medium text-slate-600">
-                    <p>#Music</p>
-                    <p>Author</p>
-                  </div>
-                  <h2 class="font-extrabold text-xl mt-3 mb-4">
-                    10 Kids Unaware of Their Halloween Costume
-                  </h2>
-                  <p class="inter text-lg text-stone-500 pb-5 mb-5 line-b">
-                    It’s one thing to subject yourself to ha Halloween costume
-                    mishap because, hey that’s your prerogative
-                  </p>
-                  <div class="card-icons flex justify-between">
-                    <div class="flex text-slate-600 gap-4">
-                      <div>
-                        <span class="mr-2"><i class="bx bx-message"></i></span
-                        >560
-                      </div>
-                      <div>
-                        <span class="mr-2"
-                          ><i class="fa-regular fa-eye"></i></span
-                        >560
-                      </div>
-                      <div>
-                        <span class="mr-2"
-                          ><i class="fa-regular fa-clock"></i></span
-                        >560
-                      </div>
-                    </div>
-                    <div class="message-icon text-green-500 scale-150">
-                      <i class="fa-solid fa-envelope-open"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="discuss-card w-[780px] bg-slate-100 p-10 rounded-[24px] flex"
-              >
-                <div class="card-image mr-6 relative">
-                  <img src="images/logo.png" alt="" />
-                  <div
-                    class="h-3 w-3 rounded-full bg-2 absolute -top-2 -right-2"
-                  ></div>
-                </div>
-                <div class="card-content">
-                  <div class="flex inter font-medium text-slate-600">
-                    <p>#Music</p>
-                    <p>Author</p>
-                  </div>
-                  <h2 class="font-extrabold text-xl mt-3 mb-4">
-                    10 Kids Unaware of Their Halloween Costume
-                  </h2>
-                  <p class="inter text-lg text-stone-500 pb-5 mb-5 line-b">
-                    It’s one thing to subject yourself to ha Halloween costume
-                    mishap because, hey that’s your prerogative
-                  </p>
-                  <div class="card-icons flex justify-between">
-                    <div class="flex text-slate-600 gap-4">
-                      <div>
-                        <span class="mr-2"><i class="bx bx-message"></i></span
-                        >560
-                      </div>
-                      <div>
-                        <span class="mr-2"
-                          ><i class="fa-regular fa-eye"></i></span
-                        >560
-                      </div>
-                      <div>
-                        <span class="mr-2"
-                          ><i class="fa-regular fa-clock"></i></span
-                        >560
-                      </div>
-                    </div>
-                    <div class="message-icon text-green-500 scale-150">
-                      <i class="fa-solid fa-envelope-open"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div id="postContainer" class="discuss-left flex flex-col gap-6 flex-1">
+              
+          
             </div>
 
-            <div class="discuss-right">
+            <div class="discuss-right flex-1">
               <div class="bg-stone-200 p-6 rounded-3xl">
                 <div class="read-title flex justify-between mb-6">
                   <h2 class="font-bold text-xl">Title</h2>
@@ -254,17 +168,8 @@
                     >Mark as read (<span>4</span>)
                   </p>
                 </div>
-                <div class="read-list">
-                  <div
-                    class="flex justify-between p-4 bg-white rounded-xl items-center"
-                  >
-                    <div class="font-semibold text-lg">
-                      10 Kids Unaware of Their Halloween Costume
-                    </div>
-                    <div class="flex gap-2 text-slate-500">
-                      <span><i class="fa-regular fa-eye"></i></span>1400
-                    </div>
-                  </div>
+                <div id="read-message-container" class="read-list flex flex-col gap-4">
+                  
                 </div>
               </div>
             </div>
@@ -286,7 +191,7 @@
               you can run unit tests and view the results directly within the
               app.
             </p>
-            <button
+            <button id="register"
               class="font-bold text-white text-xl bg-1 py-4 px-10 rounded-full"
             >
               Register Now
