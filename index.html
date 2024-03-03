@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Forum</title>
     <!-- Daisy UI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -15,6 +14,14 @@
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- Custom CSS -->
     <style>
@@ -40,6 +47,9 @@
       .bg-3 {
         background: rgb(255, 52, 52);
       }
+      .line-b {
+        border-bottom: 1px dashed #afafaf;
+      }
     </style>
   </head>
   <body class="mulish">
@@ -47,7 +57,7 @@
       <div class="container mx-auto">
         <!-- Nav -->
         <nav class="flex justify-between items-center pt-10 pb-12">
-          <div class="nav-left text-4xl font-extrabold">Fast</div>
+          <div class="nav-left text-4xl font-extrabold">FasT</div>
           <div class="nav-right flex items-center gap-5">
             <div class="nav-icons flex items-center gap-2">
               <div class="tooltip" data-tip="Home">
@@ -94,7 +104,7 @@
         >
           <div class="hero-left">
             <h2 class="text-white w-[633px] text-[64px] font-extrabold">
-              Welcome to the <span class="text-blue-700">Fast</span> Forum
+              Welcome to the <span class="text-blue-700">FasT</span> Forum
             </h2>
             <p class="text-xl text-slate-200 w-[455px] mt-5 mb-8">
               Share your favorite opinion and win and wp forum coffee mug!
@@ -142,13 +152,290 @@
               the app. The integrated testing features allow for a streamlined .
             </p>
           </div>
-          <div class="discuss-main"></div>
+          <div class="discuss-main flex gap-6">
+            <div class="discuss-left flex flex-col gap-6">
+              <div
+                class="discuss-card w-[780px] bg-slate-100 p-10 rounded-[24px] flex"
+              >
+                <div class="card-image mr-6 relative">
+                  <img src="images/logo.png" alt="" />
+                  <div
+                    class="h-3 w-3 rounded-full bg-2 absolute -top-2 -right-2"
+                  ></div>
+                </div>
+                <div class="card-content">
+                  <div class="flex inter font-medium text-slate-600">
+                    <p>#Music</p>
+                    <p>Author</p>
+                  </div>
+                  <h2 class="font-extrabold text-xl mt-3 mb-4">
+                    10 Kids Unaware of Their Halloween Costume
+                  </h2>
+                  <p class="inter text-lg text-stone-500 pb-5 mb-5 line-b">
+                    It’s one thing to subject yourself to ha Halloween costume
+                    mishap because, hey that’s your prerogative
+                  </p>
+                  <div class="card-icons flex justify-between">
+                    <div class="flex text-slate-600 gap-4">
+                      <div>
+                        <span class="mr-2"><i class="bx bx-message"></i></span
+                        >560
+                      </div>
+                      <div>
+                        <span class="mr-2"
+                          ><i class="fa-regular fa-eye"></i></span
+                        >560
+                      </div>
+                      <div>
+                        <span class="mr-2"
+                          ><i class="fa-regular fa-clock"></i></span
+                        >560
+                      </div>
+                    </div>
+                    <div class="message-icon text-green-500 scale-150">
+                      <i class="fa-solid fa-envelope-open"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="discuss-card w-[780px] bg-slate-100 p-10 rounded-[24px] flex"
+              >
+                <div class="card-image mr-6 relative">
+                  <img src="images/logo.png" alt="" />
+                  <div
+                    class="h-3 w-3 rounded-full bg-2 absolute -top-2 -right-2"
+                  ></div>
+                </div>
+                <div class="card-content">
+                  <div class="flex inter font-medium text-slate-600">
+                    <p>#Music</p>
+                    <p>Author</p>
+                  </div>
+                  <h2 class="font-extrabold text-xl mt-3 mb-4">
+                    10 Kids Unaware of Their Halloween Costume
+                  </h2>
+                  <p class="inter text-lg text-stone-500 pb-5 mb-5 line-b">
+                    It’s one thing to subject yourself to ha Halloween costume
+                    mishap because, hey that’s your prerogative
+                  </p>
+                  <div class="card-icons flex justify-between">
+                    <div class="flex text-slate-600 gap-4">
+                      <div>
+                        <span class="mr-2"><i class="bx bx-message"></i></span
+                        >560
+                      </div>
+                      <div>
+                        <span class="mr-2"
+                          ><i class="fa-regular fa-eye"></i></span
+                        >560
+                      </div>
+                      <div>
+                        <span class="mr-2"
+                          ><i class="fa-regular fa-clock"></i></span
+                        >560
+                      </div>
+                    </div>
+                    <div class="message-icon text-green-500 scale-150">
+                      <i class="fa-solid fa-envelope-open"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="discuss-right">
+              <div class="bg-stone-200 p-6 rounded-3xl">
+                <div class="read-title flex justify-between mb-6">
+                  <h2 class="font-bold text-xl">Title</h2>
+                  <p class="text-slate-500">
+                    <span class="text-green-500 mr-2"
+                      ><i class="fa-solid fa-check-double"></i></span
+                    >Mark as read (<span>4</span>)
+                  </p>
+                </div>
+                <div class="read-list">
+                  <div
+                    class="flex justify-between p-4 bg-white rounded-xl items-center"
+                  >
+                    <div class="font-semibold text-lg">
+                      10 Kids Unaware of Their Halloween Costume
+                    </div>
+                    <div class="flex gap-2 text-slate-500">
+                      <span><i class="fa-regular fa-eye"></i></span>1400
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Discuss Section End -->
+      <!-- Join Banner Section start -->
+      <section class="join-banner-section my-24">
+        <div class="container mx-auto">
+          <div
+            class="join-banner-container rounded-3xl p-24 bg-[#12132d] relative"
+          >
+            <h2 class="font-extrabold text-[40px] text-white inter">
+              Join Our Forum
+            </h2>
+            <p class="text-lg text-slate-400 w-[650px] mt-5 mb-8">
+              Share your favorite opinion and win and wp forum coffee mug! Yes,
+              you can run unit tests and view the results directly within the
+              app.
+            </p>
+            <button
+              class="font-bold text-white text-xl bg-1 py-4 px-10 rounded-full"
+            >
+              Register Now
+            </button>
+            <img
+              class="absolute bottom-0 right-4"
+              src="/images/joinforum.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Join Banner Section End -->
+      <!-- Latest Section Start -->
+      <section class="Latest-section">
+        <div class="container mx-auto">
+          <div class="latest-title text-center mb-12">
+            <h2 class="inter font-extrabold text-5xl">Latest Post</h2>
+            <p class="w-[691px] mx-auto mt-6 text-lg text-slate-500">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+          </div>
+          <div class="latest-post-list grid grid-cols-3 mb-32 gap-6">
+            <div class="card bg-base-100 border-2 border-stone-200">
+              <figure class="px-5 pt-5">
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex text-slate-600">
+                  <span class="mr-2"
+                    ><i class="fa-regular fa-calendar"></i
+                  ></span>
+                  <h3>29 January 2024</h3>
+                </div>
+                <h2 class="card-title font-extrabold my-3">
+                  What will a mars habitat force that impact in our daily
+                  life!!!
+                </h2>
+                <p class="text-slate-600">
+                  Yes, you can run unit tests and view the results directly
+                  within the app.
+                </p>
+                <div class="flex gap-3 mt-4">
+                  <div class="latest-card-img">
+                    <img src="/images/logo.png" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="font-bold">Cameron Williamson</h2>
+                    <p class="text-sm text-slate-600">Unknown</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-100 border-2 border-stone-200">
+              <figure class="px-5 pt-5">
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex text-slate-600">
+                  <span class="mr-2"
+                    ><i class="fa-regular fa-calendar"></i
+                  ></span>
+                  <h3>29 January 2024</h3>
+                </div>
+                <h2 class="card-title font-extrabold my-3">
+                  What will a mars habitat force that impact in our daily
+                  life!!!
+                </h2>
+                <p class="text-slate-600">
+                  Yes, you can run unit tests and view the results directly
+                  within the app.
+                </p>
+                <div class="flex gap-3 mt-4">
+                  <div class="latest-card-img">
+                    <img src="/images/logo.png" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="font-bold">Cameron Williamson</h2>
+                    <p class="text-sm text-slate-600">Unknown</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-100 border-2 border-stone-200">
+              <figure class="px-5 pt-5">
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex text-slate-600">
+                  <span class="mr-2"
+                    ><i class="fa-regular fa-calendar"></i
+                  ></span>
+                  <h3>29 January 2024</h3>
+                </div>
+                <h2 class="card-title font-extrabold my-3">
+                  What will a mars habitat force that impact in our daily
+                  life!!!
+                </h2>
+                <p class="text-slate-600">
+                  Yes, you can run unit tests and view the results directly
+                  within the app.
+                </p>
+                <div class="flex gap-3 mt-4">
+                  <div class="latest-card-img">
+                    <img src="/images/logo.png" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="font-bold">Cameron Williamson</h2>
+                    <p class="text-sm text-slate-600">Unknown</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest Section End -->
     </main>
-    <footer>
-      <div class="tooltip" data-tip="hello"></div>
+    <footer class="bg-stone-100">
+      <div class="container mx-auto">
+        <div class="footer-container py-24 text-center">
+          <h2 class="font-extrabold text-4xl">FasT</h2>
+          <p class="w-[610px] mx-auto mt-5 mb-6 text-slate-500">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC
+          </p>
+          <div class="footer-icons flex gap-8 justify-center text-2xl text-slate-800">
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-github"></i></span>
+          </div>
+          <div class="line bg-stone-200 w-full h-[2px] my-12"></div>
+          <h2 class="text-slate-400 text-sm">2017, All Rights Reserved.</h2>
+        </div>
+      </div>
     </footer>
 
     <!-- JavaScript link -->
