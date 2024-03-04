@@ -5,11 +5,11 @@ const loadLatestPosts = async () => {
   const posts = await res.json();
   displayLatestPost(posts);
 };
-
+const latestPostContainer = document.getElementById("latest-post-container");
 const displayLatestPost = (posts) => {
-  const latestPostContainer = document.getElementById("latest-post-container");
-
   posts.forEach((post) => {
+    const date = post.author.posted_date;
+    
     const cardDiv = document.createElement("div");
     cardDiv.classList = `card bg-base-100 border-2 border-stone-200`;
     cardDiv.innerHTML = `
@@ -25,7 +25,7 @@ const displayLatestPost = (posts) => {
       <span class="mr-2"
         ><i class="fa-regular fa-calendar"></i
       ></span>
-      <h3>${post.author.posted_date}</h3>
+      <h3  id="date" >${checkDate(date)}</h3>
     </div>
     <h2 class="card-title font-extrabold my-3">
       ${post.title}
@@ -40,7 +40,7 @@ const displayLatestPost = (posts) => {
       </div>
       <div>
         <h2 class="font-bold">${post.author.name}</h2>
-        <p class="text-sm text-slate-600">${post.author.designation}</p>
+        <p id="designation" class="text-sm text-slate-600">${post.author.designation}</p>
       </div>
     </div>
   </div>
@@ -50,3 +50,14 @@ const displayLatestPost = (posts) => {
 };
 
 loadLatestPosts();
+
+const checkDate = (date) => {
+    if(date == undefined){
+        return "No publish date"
+    }
+    else{
+        return date
+    }
+};
+
+

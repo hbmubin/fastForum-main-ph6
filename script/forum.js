@@ -6,9 +6,8 @@ const loadPost = async () => {
   const posts = data.posts;
   displayPost(posts);
 };
-
+const postContainer = document.getElementById("post-container");
 const displayPost = (posts) => {
-  const postContainer = document.getElementById("post-container");
   posts.forEach((post) => {
     const title = post.title;
     const view = post.view_count;
@@ -83,6 +82,7 @@ const addMessage = (title, view) => {
 };
 
 const searchBtn = () => {
+  Loading();
   const categoryClasses = document.getElementsByClassName("category");
   const inputSearch = document.getElementById("searchId");
   const inputV = inputSearch.value;
@@ -94,10 +94,23 @@ const searchBtn = () => {
       "hidden"
     );
     if (categoryModified != inputValue) {
-      console.log(categoryModified);
       categoryClass.parentNode.parentNode.parentNode.parentNode.classList.add(
         "hidden"
       );
     }
   }
+};
+
+const Loading = () => {
+  const loadingId = document.getElementById("loading");
+  const latestPostContainer = document.getElementById("latest-post-container");
+  const discussMain = document.getElementById("discuss-main");
+  loadingId.classList.remove("hidden");
+  discussMain.classList.add("hidden");
+  latestPostContainer.classList.add("hidden");
+  setTimeout(function () {
+    discussMain.classList.remove("hidden");
+    latestPostContainer.classList.remove("hidden");
+    loadingId.classList.add("hidden");
+  }, 2000);
 };
