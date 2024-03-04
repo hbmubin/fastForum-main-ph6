@@ -9,7 +9,6 @@ const latestPostContainer = document.getElementById("latest-post-container");
 const displayLatestPost = (posts) => {
   posts.forEach((post) => {
     const date = post.author.posted_date;
-    
     const cardDiv = document.createElement("div");
     cardDiv.classList = `card bg-base-100 border-2 border-stone-200`;
     cardDiv.innerHTML = `

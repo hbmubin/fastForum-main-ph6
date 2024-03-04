@@ -54,12 +54,14 @@
   </head>
   <body class="mulish">
     <header>
-      <div class="container mx-auto">
+      <div class="md:container mx-auto">
         <!-- Nav -->
         <nav class="flex justify-between items-center pt-10 pb-12">
           <div class="nav-left text-4xl font-extrabold">FasT</div>
-          <div class="nav-right flex items-center gap-5">
-            <div class="nav-icons flex items-center gap-2">
+          <div class="nav-right flex items-center md:gap-5">
+            <div
+              class="md:w-auto w-0 overflow-hidden nav-icons flex items-center gap-2"
+            >
               <div class="tooltip" data-tip="Home">
                 <div
                   class="h-14 w-14 rounded-full text-2xl bg-slate-200 flex justify-center items-center"
@@ -100,16 +102,16 @@
         </nav>
         <!-- Hero -->
         <div
-          class="hero-container h-[550px] bg-[#12132d] bg-[url('/images/bgbanner.png')] bg-no-repeat bg-bottom bg-contain rounded-[32px] p-24 flex justify-between items-center"
+          class="hero-container md:w-auto w-11/12 mx-auto md:h-[550px] bg-[#12132d] bg-[url('/images/bgbanner.png')] bg-no-repeat bg-bottom bg-contain rounded-[32px] p-24 flex md:flex-row md:gap-0 gap-10 flex-col justify-between items-center"
         >
           <div class="hero-left">
-            <h2 class="text-white w-[633px] text-[64px] font-extrabold">
+            <h2 class="text-white md:w-[633px] text-[64px] font-extrabold">
               Welcome to the <span class="text-blue-700">FasT</span> Forum
             </h2>
-            <p class="text-xl text-slate-200 w-[455px] mt-5 mb-8">
+            <p class="text-xl text-slate-200 md:w-[455px] mt-5 mb-8">
               Share your favorite opinion and win and wp forum coffee mug!
             </p>
-            <label class="input flex w-[320px] rounded-[46px]">
+            <label class="input flex md:w-[320px] rounded-[46px]">
               <input
                 id="searchId"
                 type="text"
@@ -125,7 +127,7 @@
               </button>
             </label>
           </div>
-          <div class="hero-right bg-white p-12 rounded-[32px] w-[380px]">
+          <div class="hero-right bg-white p-12 rounded-[32px] md:w-[380px]">
             <div
               class="font-medium text-2xl text-slate-600 flex flex-col gap-8"
             >
@@ -153,10 +155,10 @@
     <main>
       <!-- Discuss Section Start -->
       <section class="discuss-section">
-        <div class="container mx-auto">
+        <div class="md:container w-11/12 mx-auto">
           <div id="discuss-title" class="discuss-title text-center mb-12 mt-24">
             <h2 class="font-extrabold text-5xl">Let's Discuss</h2>
-            <p class="w-[691px] mx-auto mt-6 text-lg text-slate-500">
+            <p class="md:w-[691px] mx-auto mt-6 text-lg text-slate-500">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
             </p>
@@ -164,7 +166,7 @@
           <div id="loading" class="text-center my-10 hidden">
             <span class="loading loading-bars loading-lg scale-150"></span>
           </div>
-          <div id="discuss-main" class="discuss-main flex gap-6">
+          <div id="discuss-main" class="discuss-main flex md:flex-row flex-col gap-6">
             <div
               id="post-container"
               class="discuss-left flex flex-col gap-6 flex-1"
@@ -199,7 +201,7 @@
       <!-- Discuss Section End -->
       <!-- Join Banner Section start -->
       <section class="join-banner-section my-24">
-        <div class="container mx-auto">
+        <div class="md:container w-11/12 mx-auto">
           <div
             class="join-banner-container rounded-3xl p-24 bg-[#12132d] relative"
           >
@@ -228,7 +230,7 @@
       <!-- Join Banner Section End -->
       <!-- Latest Section Start -->
       <section class="Latest-section">
-        <div class="container mx-auto">
+        <div class="md:container mx-auto">
           <div class="latest-title text-center mb-12">
             <h2 class="inter font-extrabold text-5xl">Latest Post</h2>
             <p class="w-[691px] mx-auto mt-6 text-lg text-slate-500">
@@ -248,7 +250,7 @@
       <!-- Latest Section End -->
     </main>
     <footer class="bg-stone-100">
-      <div class="container mx-auto">
+      <div class="md:container mx-auto">
         <div class="footer-container py-24 text-center">
           <h2 class="font-extrabold text-4xl">FasT</h2>
           <p class="w-[610px] mx-auto mt-5 mb-6 text-slate-500">

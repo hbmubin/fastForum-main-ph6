@@ -12,13 +12,12 @@ const displayPost = (posts) => {
     const title = post.title;
     const view = post.view_count;
     const activity = post.isActive;
-
     const postCard = document.createElement("div");
-    postCard.classList = `postCard card border-2 border-stone-200 p-8 flex flex-row`;
+    postCard.classList = `postCard card border-2 border-stone-200 p-8 flex md:flex-row flex-col md:gap-0 gap-3`;
     postCard.innerHTML = ` <div class="card-image w-20 mr-6 relative">
     <img class="rounded-xl" src="${post.image}" alt="" />
     <div id="dot" 
-      class="h-3 w-3 bg-green-500 rounded-full absolute -top-1 -right-1"
+      class="h-3 w-3 ${checkActive(activity)} rounded-full absolute -top-1 -right-1"
     ></div>
   </div>
   <div class="card-content w-full flex-1">
@@ -113,4 +112,12 @@ const Loading = () => {
     latestPostContainer.classList.remove("hidden");
     loadingId.classList.add("hidden");
   }, 2000);
+};
+
+const checkActive = (activity) => {
+  if (activity) {
+    return "bg-green-500";
+  } else {
+    return "bg-red-500";
+  }
 };
