@@ -50,6 +50,12 @@
       .line-b {
         border-bottom: 1px dashed #afafaf;
       }
+      .join-banner-image{
+        z-index: -1;
+      }
+      .join-banner-container{
+        z-index: 9;
+      }
     </style>
   </head>
   <body class="mulish">
@@ -203,12 +209,12 @@
       <section class="join-banner-section my-24">
         <div class="md:container w-11/12 mx-auto">
           <div
-            class="join-banner-container rounded-3xl p-24 bg-[#12132d] relative"
+            class="join-banner-container rounded-3xl md:p-24 p-12 bg-[#12132d] relative"
           >
             <h2 class="font-extrabold text-[40px] text-white inter">
               Join Our Forum
             </h2>
-            <p class="text-lg text-slate-400 w-[650px] mt-5 mb-8">
+            <p class="text-lg text-slate-400 md:w-[650px] mt-5 mb-8">
               Share your favorite opinion and win and wp forum coffee mug! Yes,
               you can run unit tests and view the results directly within the
               app.
@@ -220,7 +226,7 @@
               Register Now
             </button>
             <img
-              class="absolute bottom-0 right-4"
+              class="absolute bottom-0 right-4 join-banner-image"
               src="/images/joinforum.png"
               alt=""
             />
@@ -230,10 +236,10 @@
       <!-- Join Banner Section End -->
       <!-- Latest Section Start -->
       <section class="Latest-section">
-        <div class="md:container mx-auto">
+        <div class="md:container w-11/12 mx-auto">
           <div class="latest-title text-center mb-12">
             <h2 class="inter font-extrabold text-5xl">Latest Post</h2>
-            <p class="w-[691px] mx-auto mt-6 text-lg text-slate-500">
+            <p class="md:w-[691px] mx-auto mt-6 text-lg text-slate-500">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
             </p>
@@ -243,17 +249,17 @@
           </div>
           <div
             id="latest-post-container"
-            class="latest-post-list grid grid-cols-3 mb-32 gap-6"
+            class="latest-post-list grid md:grid-cols-3 mb-32 gap-6"
           ></div>
         </div>
       </section>
       <!-- Latest Section End -->
     </main>
     <footer class="bg-stone-100">
-      <div class="md:container mx-auto">
+      <div class="md:container w-11/12 mx-auto">
         <div class="footer-container py-24 text-center">
           <h2 class="font-extrabold text-4xl">FasT</h2>
-          <p class="w-[610px] mx-auto mt-5 mb-6 text-slate-500">
+          <p class="md:w-[610px] mx-auto mt-5 mb-6 text-slate-500">
             Empowering rapid and dynamic discussions. Join our platform for
             swift exchanges of ideas and insights, fostering innovation and
             collaboration.
